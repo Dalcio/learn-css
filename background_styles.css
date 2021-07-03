@@ -1,0 +1,47 @@
+body {
+  background-color: #333;
+  margin: 0;
+}
+
+.flex-box-container {
+  align-self: center;
+  background-color: yellowgreen;
+  align-self: center;
+}
+
+.axis {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+}
+
+.x-axis {
+  align-self: center;
+  background-color: #ff0000;
+}
+
+.y-axis {
+  margin-top: 10px;
+  align-self: stretch;
+  transform: rotate(90deg);
+  background-color: seagreen;
+}
+
+.axis::after {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 2em;
+  bottom: 10px;
+}
+
+.x-axis::after {
+  content: "X-axis";
+  color: #ff0000;
+  right: 10px;
+}
+
+.y-axis::after {
+  content: "Y-axis";
+  color: green;
+  right: calc(100% - calc(2em * 6) - 20px);
+}
