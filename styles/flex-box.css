@@ -1,5 +1,34 @@
 .flex-box-container {
   display: flex;
+  background-color: yellowgreen;
+  /* Horizontal align start left */
+  /* justify-content: flex-start; */
+  /* Horizontal align start right */
+  /* justify-content: flex-end; */
+  /* Divide the space around then */
+  /* justify-content: space-around; */
+  /* Dive the space between then */
+  /* justify-content: space-between; */
+  /* Divide the space equally */
+  /* it center all elements horizontal */
+  /* justify-content: center; */
+  /* justify-content: center; */
+  /**********/
+  /* Is the default value. It sets all items with th same height*/
+  /* align-items: stretch; */
+  /* We keep the height of all items and align then at the top*/
+  /* align-items: flex-start; */
+  /* We keep the height of all items and align then at the bottom*/
+  /* align-items: flex-end; */
+  /* Center all items Vertical */
+  /* align-items: center; */
+  /* Sets whether flex items are forced onto one line or can wrap onto multiple lines */
+  /* flex-wrap: wrap; */
+  /* It works like justify content plus align items but if the content have a height. The default value is stretch. */
+  /* height: 100vh; */
+  /* align-content: flex-end; */
+  /* Changes flex directions rsrs to column, display items vertically(one column). default valueis row. when we changes the directions wi are changing all property directions(eg.: justify works vertical and align horizontal. */
+  /* flex-direction: column; */
 }
 
 .flex-box-item {
@@ -11,12 +40,29 @@
 
 .flex-box-item-1 {
   min-height: 100px;
+  /* Don't shrink(encolher) while content width is changing. It keep width unchangeable*/
+  flex-shrink: 0;
+  /* Set the order of one element */
+  order: 2;
+  background-color: lightcoral;
+  /* general rule for that mean:=>
+  flex: flex-grow flex-shrink flex-basis */
+  flex: 1 0 2;
 }
 
 .flex-box-item-2 {
+  order: 1;
   min-height: 200px;
+  /* If there is multiple items whit flex-grow it will divide the space according the value that they have and for items who have the same value, it will divide 50 / 50 for each */
+  flex-grow: 1;
+  /* It tell if flex-grow should increase the default width or not. property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing. */
+  flex-basis: 0;
 }
 
 .flex-box-item-3 {
   min-height: 300px;
+  /* It tell to the item how much of free space should occupy if there is. It accepts double values but don't accepts %. It basically tell how much of free space the element should take.*/
+  flex-basis: 0;
+  flex-grow: 2;
+  order: 3;
 }
