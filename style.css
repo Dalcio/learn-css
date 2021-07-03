@@ -1,0 +1,21 @@
+.flex-box-container {
+}
+
+.flex-box-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+}
+
+.flex-box-item-1 {
+  height: 100px;
+}
+
+.flex-box-item-2 {
+  height: 200px;
+}
+
+.flex-box-item-3 {
+  height: 300px;
+}
