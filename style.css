@@ -1,4 +1,5 @@
 .flex-box-container {
+  display: flex;
 }
 
 .flex-box-item {
@@ -9,13 +10,13 @@
 }
 
 .flex-box-item-1 {
-  height: 100px;
+  min-height: 100px;
 }
 
 .flex-box-item-2 {
-  height: 200px;
+  min-height: 200px;
 }
 
 .flex-box-item-3 {
-  height: 300px;
+  min-height: 300px;
 }
